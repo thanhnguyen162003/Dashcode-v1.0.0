@@ -11,13 +11,8 @@ const Page404 = () => {
         <div className="flex flex-wrap justify-between items-center py-6 container">
           <div>
             <Link href="/">
-              <Logo />
+              {/* <Logo /> */}
             </Link>
-          </div>
-          <div>
-            <Button variant="outline" size="sm">
-              Contact Us
-            </Button>
           </div>
         </div>
       </div>
@@ -37,40 +32,6 @@ const Page404 = () => {
         <div className="container">
           <div className="md:flex justify-between items-center flex-wrap space-y-4 py-6">
             <div>
-              <ul className="flex md:justify-start justify-center gap-3">
-                <li>
-                  <Link
-                    href="#"
-                    className="border-default inline-block border border-solid  rounded-full hover:bg-default hover:text-default-50 duration-300 transition-all p-2"
-                  >
-                    <Icon className="h-4 w-4" icon="icomoon-free:facebook" />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="border-default inline-block border border-solid  rounded-full hover:bg-default hover:text-default-50 duration-300 transition-all p-2"
-                  >
-                    <Icon className="h-4 w-4" icon="icomoon-free:twitter" />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="border-default inline-block border border-solid  rounded-full hover:bg-default hover:text-default-50 duration-300 transition-all p-2"
-                  >
-                    <Icon className="h-4 w-4" icon="icomoon-free:linkedin2" />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="border-default inline-block border border-solid  rounded-full hover:bg-default hover:text-default-50 duration-300 transition-all p-2"
-                  >
-                    <Icon className="h-4 w-4" icon="icomoon-free:google" />
-                  </Link>
-                </li>
-              </ul>
             </div>
             <div>
               <ul className="flex md:justify-start justify-center space-x-3">
