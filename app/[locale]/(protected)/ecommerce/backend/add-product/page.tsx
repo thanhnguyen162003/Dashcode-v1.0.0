@@ -13,8 +13,23 @@ import {
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
 
 const AddProduct = () => {
+  const [name, setName] = useState<string>('');
+  const [description, setDescription] = useState<string>();
+  const [stockQuantity, setStockQuantity] = useState<number|0>();
+  const [price, setPrice] = useState<number|0>();
+  const [originalPrice, setOriginalPrice] = useState<number|0>();
+  const [breed, setBreed] = useState<string>();
+  const [size, setSize] = useState<number|0>();
+  const [age, setAge] = useState<number|0>();
+  const [origin, setOrigin] = useState<string>();
+  const [sex, setSex] = useState<boolean>();
+  const [foodAmount, setFoodAmount] = useState<number>();
+  
+  
+  
   return (
     <div className=" grid grid-cols-12  gap-4  rounded-lg">
       <div className="col-span-12 md:col-span-7 space-y-4 lg:col-span-7 ">
@@ -48,6 +63,7 @@ const AddProduct = () => {
                 </SelectContent>
               </Select>
             </div>
+
             <div className="flex items-center flex-wrap">
               <Label className="w-[150px] flex-none">Brand</Label>
               <Select>
